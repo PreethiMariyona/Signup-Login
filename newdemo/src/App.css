@@ -1,0 +1,115 @@
+/* Overall App styling */
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(79deg, #7439db, #C66FBC 48%, #F7944D);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Container for authentication forms */
+.auth-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+/* Styling for form elements */
+.login-form, .register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline: none;
+  /* transition: background 0.3s, border-color 0.3s; */
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255,255, 0.5);
+}
+
+/* Button styles */
+button {
+  border: none;
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #7439db;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  /* background-color: #f0f0f0; */
+  transform: scale(1.05);
+}
+
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.link-btn:hover {
+  /* color: #f0f0f0; */
+}
+
+/* Responsive design for larger screens */
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 3rem;
+    margin: 0.5rem;
+  }
+}
+
+/* Error message styling */
+.error {
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+/* Extra styling for home component */
+.home-container {
+  text-align: center;
+  color: #f0f0f0;
+  padding: 2rem;
+}
+
+.home-container h2 {
+  margin-bottom: 1rem;
+}
+
+.home-container button {
+  background-color: #f0f0f0;
+  color: #7439db;
+}
